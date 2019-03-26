@@ -40,8 +40,6 @@ h1 {
     font-weight: lighter;
     font-size: 20px;
     z-index:1;
-    border: 1px solid black;
-
 }
 
 #moocus {
@@ -138,6 +136,14 @@ li.selected {
 #chat {
     position: fixed;
     overflow: auto;
+    right: 0;
+    height: 100%;
+    width: 60%;
+}
+
+#message-area {
+    position: fixed;
+    overflow: auto;
     top: 64px;
     right: 0;
     height: 100%;
@@ -145,8 +151,10 @@ li.selected {
 }
 
 #selected-channel-for-chat {
+    display: block;
     padding-left: 16px;
     position: fixed;
+    z-index: 10;
 }
 
 #selected-channel-for-chat a {
