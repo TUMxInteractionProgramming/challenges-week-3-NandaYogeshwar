@@ -40,6 +40,7 @@ h1 {
     font-weight: lighter;
     font-size: 20px;
     z-index:1;
+    border: 1px solid black;
 
 }
 
@@ -143,8 +144,18 @@ li.selected {
     width: 60%;
 }
 
-#chat h1 {
+#selected-channel-for-chat {
     padding-left: 16px;
+    position: fixed;
+}
+
+#selected-channel-for-chat a {
+    color: white;
+}
+#selected-channel-for-chat img {
+    vertical-align: bottom;
+    position: fixed;
+    right: 16px;
 }
 /* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
 .message {
@@ -217,6 +228,7 @@ li.selected {
 
 /* div for the emojis*/
 #emojis {
+    display: none;
     padding: 16px;
     background-color: white;
     width: 200px;
